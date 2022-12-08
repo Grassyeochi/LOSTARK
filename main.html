@@ -5,16 +5,12 @@
 </head>
 <body>
 
-[
-  {
-    "Title": "string",
-    "Thumbnail": "string",
-    "Link": "string",
-    "StartDate": "2022-12-08T17:28:16.767Z",
-    "EndDate": "2022-12-08T17:28:16.767Z",
-    "RewardDate": "2022-12-08T17:28:16.767Z"
-  }
-]
+var xmlHttpRequest = new XMLHttpRequest();
+xmlHttpRequest.open("GET", "https://developer-lostark.game.onstove.com/markets/items/1", true);
+xmlHttpRequest.setRequestHeader('accept', 'application/json');
+xmlHttpRequest.setRequestHeader('authorization', 'bearer {eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyIsImtpZCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyJ9.eyJpc3MiOiJodHRwczovL2x1ZHkuZ2FtZS5vbnN0b3ZlLmNvbSIsImF1ZCI6Imh0dHBzOi8vbHVkeS5nYW1lLm9uc3RvdmUuY29tL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IjEwMDAwMDAwMDAwMDEwMzYifQ.iRnu5vnAHvG58qln_AjeXoprD7RVGkopLHLKNtNcMwpNQP4nqTrTcn_TCnG5-KX59g2HHe7-iNn8F6VOTFqpJDVX3ZI-u865mnYtXneGcspI7exNGFneiisjWI5XT_0QMf_pUv4gcNdF3Gsv7z0xQt0saCZbnek_bH9FS5Sy87v0njqZ8zUPBeuTI1UIL4s1SAkEgIRWPq3h0vvypcfd2urzHRYCFE4HxeWBnmQO65It--YQEv7JBP0BefjhhO_z270aaKSNoUDtCpqa4gdBvQEDh49eg0fc77vGiN4ZWNW9tUIHi1Enq85qykukb1YrIy5Zj_4EKBtD5IeE-jzpgw}');
+xmlHttpRequest.onreadystatechange = () => { };
+xmlHttpRequest.send();
 
 </body>
 </html>
